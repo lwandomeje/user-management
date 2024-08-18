@@ -1,0 +1,6 @@
+<div class="list-seach-cont">
+    <input [(ngModel)]="searchTerm" (input)="onSearch()" placeholder="Search users" class="search">
+    <ul *ngFor="let user of users">
+        <a routerLink="user-datails">{{ user.name }} ({{ user.email }})</a>
+    </ul>
+  </div>
